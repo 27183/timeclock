@@ -57,3 +57,5 @@ end
 
 
 gem 'rails_12factor'
+gem 'debugger'
+gem 'railties'
