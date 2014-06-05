@@ -59,3 +59,6 @@ end
 gem 'rails_12factor'
 gem 'debugger'
 gem 'railties'
+gem 'twitter-bootstrap-rails'
+gem 'less-rails'
+gem 'therubyracer'
