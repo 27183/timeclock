@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Timeclock::Application.config.secret_key_base = '4f9275c810ef7bc2fcedaa208c6d6fca0ae8fc5474b909267b13597bd0c03939454c65604c5f0d6fac3bbcd9bdc821a2a19dd21db451b869871473d8dd52a839'
+Timeclock::Application.config.secret_key_base = '7b8aa06ab72aca80ff80dd2c99f41397d0bd70053f7f5591cb17b23cdf908ee4bb81fdcf71435bdd4bb140951e063d4e00f78f747256b291ac79f0afab2f51f3'
