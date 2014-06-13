@@ -1,11 +1,13 @@
 class PunchCardsController < ApplicationController
 
   def index
-    @punches = Punch.all
+    @punches = Punch.all.order(:punch_in).reverse_order
   end
 
   def new
-    @punch = Punch.new
+    @punch = Punch.create(punch_in: Time.now())
+    flash[:notice] = "Punched In Sucessfully"
+    redirect_to root_path
   end
 
 

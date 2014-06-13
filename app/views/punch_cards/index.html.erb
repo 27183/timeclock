@@ -1,3 +1,30 @@
-Punch cards index view
 
-<button type="button" class="btn btn-default"><span class="icon-pencil"></span></button>
+
+
+<%= link_to new_punch_card_path do%>
+    <button type="button" class="btn btn-default">Punch In <span class="icon-time"></span></button>
+<% end %>
+
+<h4>
+Time Record
+</h4>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+        <td>Punch In</td>
+        <td>Punch Out</td>
+        <td>Time Worked</td>
+    </tr>
+  </thead>
+  <tbody>
+
+  <% @punches.each do |punch| %>
+  <tr id="<%=punch.id%>">
+    <td><%= punch.punch_in%></td>
+    <td><%= punch.punch_out%></td>
+    <td><%= Time.at(punch.punch_time).gmtime.strftime('%R')%></td>
+  </tr>
+  <% end %>
+  </tbody>
+  </table>
