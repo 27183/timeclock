@@ -6,9 +6,8 @@ class PunchCardsController < ApplicationController
 
   def new
     @punch = Punch.create(punch_in: Time.now())
-    flash[:notice] = "Punched In Sucessfully"
+    flash[:success] = "Punched In Sucessfully"
     redirect_to root_path
   end
-
 
 end
